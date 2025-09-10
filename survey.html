@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta - Élite Fragrances</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header simple con logo -->
+  <header style="padding:2rem; text-align:center; background:#111; border-bottom:1px solid rgba(197,164,109,0.2);">
+    <h1 class="luxury-font" style="color:var(--gold); font-size:2.5rem;">Élite Fragrances</h1>
+    <p style="color:#ccc;">Encuesta de Experiencia Sensorial</p>
+  </header>
+
+  <!-- Formulario -->
+  <section id="survey" class="contact-section">
+    <div class="contact-container">
+      <form id="surveyForm" class="horizontal-form">
+        <!-- Datos Generales -->
+        <fieldset>
+          <legend>Datos Generales</legend>
+          <label>Edad: <input type="number" name="edad" min="12" max="120" required></label>
+          <label>Género: 
+            <select name="genero" required>
+              <option value="">Selecciona Género</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <!-- Repite para los sentidos -->
+        <fieldset>
+          <legend>Percepción Visual</legend>
+          <label>La estética del espacio/producto fue atractiva:
+            <select name="visual1" required>
+              <option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </label>
+          <label>El diseño visual ayudó a comprender la historia o concepto:
+            <select name="visual2" required>
+              <option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Percepción Auditiva</legend>
+          <label>La música o sonidos contribuyeron positivamente:
+            <select name="auditiva1" required><option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+          <label>El volumen y tipo de sonido fueron adecuados:
+            <select name="auditiva2" required><option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Percepción Olfativa</legend>
+          <label>Los aromas hicieron la experiencia más agradable:
+            <select name="olfativa1" required><option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+          <label>El aroma era coherente con la temática o producto:
+            <select name="olfativa2" required><option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Percepción Táctil</legend>
+          <label>Pude tocar o interactuar con los productos/materiales:
+            <select name="tactil1" required>
+              <option value="">Sí/No</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+          <label>La interacción táctil fue satisfactoria:
+            <select name="tactil2"><option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+        </fieldset>
+
+        <button type="submit" class="btn-primary">ENVIAR ENCUESTA</button>
+      </form>
+    </div>
+  </section>
+
+<!-- Footer completo para survey.html -->
+<footer style="background:#111; padding:3rem 2rem; text-align:center; border-top:1px solid rgba(197,164,109,0.2);">
+  <!-- Logo y copyright -->
+  <p style="color:#ccc; margin-bottom:1rem;">© 2025 Élite Fragrances</p>
+
+  <!-- Información de contacto -->
+  <p style="color:#ccc; margin-bottom:0.5rem;">
+    📍 Ciudad de México, México &nbsp;|&nbsp; ✉️ <a href="mailto:contacto@elitefragrances.com" style="color:var(--gold); text-decoration:none;">contacto@elitefragrances.com</a> &nbsp;|&nbsp; 📞 +52 55 1234 5678
+  </p>
+
+  <!-- Redes sociales -->
+  <div style="margin-top:0.5rem;">
+    <a href="https://www.instagram.com/elitefragrances" target="_blank" style="color:var(--gold); margin:0 0.5rem; text-decoration:none;">Instagram</a> |
+    <a href="https://www.facebook.com/elitefragrances" target="_blank" style="color:var(--gold); margin:0 0.5rem; text-decoration:none;">Facebook</a> |
+    <a href="https://twitter.com/elitefragrances" target="_blank" style="color:var(--gold); margin:0 0.5rem; text-decoration:none;">Twitter</a>
+  </div>
+
+  <!-- Link a página principal -->
+  <div style="margin-top:1rem;">
+    <a href="index.html" style="color:var(--gold); font-weight:500; text-decoration:none; letter-spacing:1px; transition:0.3s;">Volver a la página principal</a>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* Contenedor del formulario */
+.contact-section { padding:6rem 2rem; background:#0d0d0d; }
+.contact-container { max-width:900px; margin:auto; }
+
+/* Formulario elegante */
+#surveyForm {
+  display: grid;
+  gap: 2rem;
+  background: #111;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
+}
+
+/* Fieldsets: dos columnas horizontales */
+#surveyForm fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+#surveyForm legend { font-family:'Playfair Display', serif; color:var(--gold); font-size:1.1rem; }
+#surveyForm label { display:flex; flex-direction:column; font-size:0.95rem; color:#ccc; gap:0.3rem; }
+
+#surveyForm select, #surveyForm input {
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 1rem;
+}
+
+#surveyForm select:focus, #surveyForm input:focus {
+  border-color: var(--gold);
+  outline: none;
+  background: rgba(0,0,0,0.7);
+}
+
+/* Botón enviar */
+#surveyForm button.btn-primary { width:200px; justify-self:center; margin-top:1rem; }
+
+/* Responsive: columnas a vertical en móvil */
+@media(max-width:768px){
+  #surveyForm fieldset { grid-template-columns: 1fr; }
+}
