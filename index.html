@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Élite Fragrances - Experiencia Sensorial</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="logo luxury-font">Élite Fragrances</div>
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+    <div class="nav-links">
+      <a href="#khamra">Khamra</a>
+      <a href="#cobalt">Bad Boy Cobalt</a>
+      <a href="#jpg">Le Beau</a>
+      <a href="#survey">Encuesta</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="luxury-font">Élite Fragrances</h1>
+      <p class="subtext">Perfumes Masculinos de Alta Gama</p>
+      <p class="subtext-small">Experiencia sensorial sofisticada y minimalista</p>
+      <button class="btn-primary" onclick="scrollToSection('khamra')">DESCUBRIR COLECCIÓN</button>
+    </div>
+  </section>
+
+  <!-- Perfume Sections -->
+
+  <!-- Khamra (imagen izquierda) -->
+  <section id="khamra" class="perfume-section left-info">
+    <div class="perfume-container">
+        <div class="perfume-img">
+            <img src="assets/Lattafa-Khamrah.webp" alt="Khamra Perfume">
+        </div>
+        <div class="perfume-info">
+            <h2 style="color:#8b5e3c;">Khamra</h2>
+            <span class="perfume-sub">Oriental Especiado / Gourmand Dulce</span>
+            <p class="desc">Perfume unisex que despierta los sentidos desde la primera aplicación.</p>
+            <p class="price">$49.99 USD</p>
+            <div class="perfume-buttons">
+              <button class="btn-notes khamra-hover" onclick="showModal('khamra')">DESCUBRIR NOTAS</button>
+              <a href="https://www.lattafa-usa.com/products/khamrah" target="_blank" class="btn-buy khamra">COMPRAR AHORA</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Bad Boy Cobalt (imagen derecha) -->
+  <section id="cobalt" class="perfume-section right-info">
+    <div class="perfume-container">
+        <div class="perfume-img">
+            <img src="assets/BADBOYCOBALT.webp" alt="Bad Boy Cobalt Perfume">
+        </div>
+        <div class="perfume-info">
+            <h2 style="color:#0077b6;">Bad Boy Cobalt</h2>
+            <span class="perfume-sub">Aromático Amaderado / Amaderado Frutal</span>
+            <p class="desc">Fragancia masculina audaz y moderna con frescura picante y corazón frutal.</p>
+            <p class="price">$193.00 USD</p>
+            <div class="perfume-buttons">
+              <button class="btn-notes cobalt-hover" onclick="showModal('cobalt')">DESCUBRIR NOTAS</button>
+              <a href="https://www.macys.com/shop/product/bad-boy-cobalt-eau-de-parfum-fragrance-collection?ID=13725752" target="_blank" class="btn-buy cobalt">COMPRAR AHORA</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Le Beau (imagen izquierda) -->
+  <section id="jpg" class="perfume-section left-info">
+    <div class="perfume-container">
+        <div class="perfume-img">
+            <img src="assets/JPG.avif" alt="Le Beau Perfume">
+        </div>
+        <div class="perfume-info">
+            <h2 style="color:#4a4a4a;">Le Beau</h2>
+            <span class="perfume-sub">Amaderado Aromático / Fougere Elegante</span>
+            <p class="desc">Fragancia masculina moderna y seductora que mezcla frescura, suavidad y base envolvente.</p>
+            <p class="price">$79.50 USD</p>
+            <div class="perfume-buttons">
+              <button class="btn-notes jpg-hover" onclick="showModal('jpg')">DESCUBRIR NOTAS</button>
+              <a href="https://www.amazon.com/Jean-Paul-Gaultier-125ml-Toilette/dp/B07TK2966Q" target="_blank" class="btn-buy jpg">COMPRAR AHORA</a>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Encuesta -->
+  <section id="survey" class="contact-section">
+    <div class="contact-container">
+      <h2 class="luxury-font">Encuesta de Experiencia Sensorial</h2>
+      <form id="surveyForm" class="horizontal-form">
+        <fieldset>
+          <legend>Datos Generales</legend>
+          <label>Edad:
+            <input type="number" name="edad" min="12" max="120" required>
+          </label>
+          <label>Género:
+            <select name="genero" required>
+              <option value="">Selecciona Género</option>
+              <option value="masculino">Masculino</option>
+              <option value="femenino">Femenino</option>
+              <option value="otro">Otro</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Percepción Visual</legend>
+          <label>La estética del espacio/producto fue atractiva:
+            <select name="visual1" required>
+              <option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </label>
+          <label>El diseño visual ayudó a comprender la historia o concepto:
+            <select name="visual2" required>
+              <option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Percepción Auditiva</legend>
+          <label>La música o sonidos contribuyeron positivamente:
+            <select name="auditiva1" required><option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+          <label>El volumen y tipo de sonido fueron adecuados:
+            <select name="auditiva2" required><option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Percepción Olfativa</legend>
+          <label>Los aromas hicieron la experiencia más agradable:
+            <select name="olfativa1" required><option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+          <label>El aroma era coherente con la temática o producto:
+            <select name="olfativa2" required><option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Percepción Táctil</legend>
+          <label>Pude tocar o interactuar con los productos/materiales:
+            <select name="tactil1" required>
+              <option value="">Sí/No</option>
+              <option value="si">Sí</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+          <label>La interacción táctil fue satisfactoria:
+            <select name="tactil2"><option value="">1-5</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+          </label>
+        </fieldset>
+
+        <button type="submit" class="btn-primary">ENVIAR ENCUESTA</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Notes Modal -->
+  <div id="notesModal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-img">
+        <img id="modalImage" src="" alt="Perfume">
+      </div>
+      <div class="modal-info">
+        <h3 id="modalTitle">Notas Olfativas</h3>
+        <p id="modalFamily"></p>
+        <p id="modalSummary"></p>
+        <button class="btn-close" onclick="closeModal()">CERRAR</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
